@@ -1,0 +1,69 @@
+# ==========================================
+# NIC-CloudBot .gitignore
+# ==========================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.installed.cfg
+*.egg-info
+
+# --- Virtual Environments ---
+.venv/
+venv/
+env/
+.env
+ENV/
+
+# --- Large Data / Model Files (Do NOT commit, use Kaggle/HuggingFace) ---
+# Large training CSVs (hundreds of MB)
+Event_traces.csv
+anomaly_label.csv
+# Trained model artifacts
+*.pkl
+*.parquet
+# Allow small reference CSV
+!HDFS_templates.csv
+!quantization_matrix.csv
+
+# --- Large JSON Training Datasets ---
+nic_cloudbot_sre_dataset.json
+nic_cloudbot_sre_train.json
+nic_cloudbot_sre_test.json
+
+# --- Fine-Tuned Model Adapter ---
+nic-cloudbot-slm-adapter/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# --- Jupyter Notebooks Outputs ---
+.ipynb_checkpoints/
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Logs & Temp ---
+*.log
+*.tmp
+logs/
