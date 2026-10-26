@@ -276,7 +276,7 @@ MIT License
 
 ## 👥 Authors
 
-- **Divesh Valecha** — Lead Developer & ML Engineer
+- Divesh Valecha, Palak Chainani,Jeet Suchdev, Meet RamRakhiani.
 
 ---
 
